@@ -91,7 +91,7 @@
     margin: 0;
     padding: 0;
     height: 100%;
-    background-image: url("app/portal/bg.jpg");
+    background-image: url("app/dist/bg.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
