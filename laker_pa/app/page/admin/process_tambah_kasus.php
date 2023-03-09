@@ -57,6 +57,29 @@ VALUES
 
 ");
 
+$nama_petugas   = $_SESSION['nama'];
+
+$myuid_terima          = uniqid();
+
+$query = mysqli_query($koneksi, "INSERT INTO tb_pengaduan_diterima 
+(   
+    id,
+    id_kasus,
+    no_register,
+    nama_petugas,
+    status,
+    date_created
+)
+     VALUE
+(
+    '$myuid_terima',
+    '$myuid',
+    '$reg',
+    '$nama_petugas',
+    '$status',
+    '$date'
+)
+");
 header("location: ../../index.php?page=data-kasus-admin");
 
 ?>
