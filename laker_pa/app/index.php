@@ -97,6 +97,9 @@ include('header.php');?>
       else if ($_GET['page']=='view-pelaku-by-admin'){
         include('page/admin/view_pelaku.php');
       }
+      else if ($_GET['page']=='detail-kasus'){
+        include('page/admin/view_detail_kasus.php');
+      }
 
 
 
